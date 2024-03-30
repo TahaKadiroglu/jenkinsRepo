@@ -1,6 +1,4 @@
 pipeline {
-  agent { 
-  }
   stages {
     stage('install playwright') {
       steps {
