@@ -3,12 +3,12 @@ agent any
   stages {
     stage('help') {
       steps {
-        sh 'npx playwright test --help'
+        bat 'npx playwright test --help'
       }
     }
     stage('test') {
       steps {
-        sh '''
+        bat '''
           npx playwright test --list
           npx playwright test
         '''
