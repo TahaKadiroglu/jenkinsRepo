@@ -4,7 +4,7 @@ pipeline {
 
     stage('install npm'){
       steps{
-        '''npm install'''
+        sh '''npm install'''
       }
     }
     stage('install playwright') {
