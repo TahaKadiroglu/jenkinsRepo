@@ -23,9 +23,9 @@ pipeline {
     stage('test') {
       steps {
         bat '''
-          npx playwright test --list
-          npx playwright test
-        '''
+          npx playwright test --list'''
+          bat '''npx playwright test'''
+        
       }
     }
   }
